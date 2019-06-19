@@ -351,7 +351,7 @@ if __name__ == "__main__":
             save.newspellcollection["Spells"][x] = tmp
     #set arena tickets
     if args.tickets and args.tickets > 0:
-        save.arenaplayerstate["ConsumableTicketCount"] = 9999
+        save.arenaplayerstate["ConsumableTicketCount"] = args.tickets
         save.arenaplayerstate["HasTicket"] = True
     #give all costumes
     if args.all_hats:
